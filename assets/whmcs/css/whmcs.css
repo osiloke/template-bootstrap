@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:500,700");
+
+body { background-color: #EFEFEF; }
+
+h1, h2, h3 { font-family: 'Ubuntu',sans-serif; font-weight: 700; }
+
+h1, h2 { letter-spacing: -2px; }
+
+h3 { letter-spacing: -1px; font-weight: 700; }
+
+h1 small, h2 small, h3 small { letter-spacing: -1px; font-weight: 500; }
+
+select { width:auto; }
+
+#whmcsheader { background-color: #ffffff; padding: 15px; }
+
+#whmcsnavbar .navbar { margin-left:-30px; margin-right:-30px; margin-bottom:0px; }
+
+#whmcsbody { background-color:#ffffff; padding:15px; }
+
+#whmcsbody > .page-header { margin-top:0px; }
+
+.page-header { padding-bottom: 8px; }
+
+#whmcsfooter { background-color: #ffffff; padding: 15px; font-size: 11px; font-family: Tahoma; color: #666 }
+
+#whmcsfooter #languagefrm { margin-bottom: 0px; }
+
+#whmcsfooterdivider > .navbar-inner { margin-left: -30px; margin-right: -30px; min-height: 5px;}
+
+.textright { text-align: right !important; }
+.textleft { text-align: left !important; }
+.textcenter { text-align: center !important;}
+
+.marginbottom { margin-bottom: 18px; }
+.nomarginbottom { margin-bottom: 0px !important; }
+
+.borderradius { border-radius: 6px; }
+
+.valigntop { vertical-align:top; }
+.valigntextbottom { vertical-align:text-bottom; }
+.valignbaseline { vertical-align:baseline; }
+
+/* height and font-size match btn-large */
+.input-large {
+	height: 27px;
+	font-size:15px;
+}
+
+/* table tfoot styling */
+.table > tfoot { font-weight:bold; }
+
+/* table outside border only */
+.table-bordered-outside {
+  border: 1px solid #dddddd;
+  border-collapse: separate;
+  *border-collapse: collapsed;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+/* table head sorting */
+.table-sorted th.sort-asc,
+.table-sorted th.sort-desc {
+	background-color: rgba(141, 192, 219, 0.25);
+	background-position: 95% 50%;
+	background-repeat: no-repeat;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+}
+.table-sorted th.sort-desc { background-image: url('../img/sort-desc.png'); }
+.table-sorted th.sort-asc { background-image: url('../img/sort-asc.png'); }
+
+/* additonal bootstrap labels */
+.label-pending { background-color:#F89406; }
+.label-active { background-color:#46A546; }
+.label-suspended { background-color: #0768B8; }
+.label-terminated { background-color: #C43C35; }
+.label-cancelled { background-color: #BFBFBF; }
+.label-expired { background-color: #888888; }
+.label-fraud { background-color: #000000; }
+.label-unpaid { background-color: #cc0000; }
+.label-paid { background-color: #779500; }
+.label-refunded { background-color: #224488; }
+.label-collections { background-color: #D3C403; }
+
+[class^="icon32-"],
+[class*="icon32-"] {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	line-height: 32px;
+	*margin-right: .3em;
+	vertical-align: text-top;
+	background-repeat: no-repeat;
+}
+
+.icon32-twitter { background-image: url("../img/twitter32.png"); }
+
+.badge-white {
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.ticketreply {
+	border-color: #ddd;
+	border-width: 0 1px; 
+	border-style: solid;
+	padding: 10px;
+	margin: 0px 10px;
+}
+.ticketreply > p {
+	min-height: 100px;
+}
+
+.ticketreplys .ticketreply:last-child {
+	border-bottom: 1px solid #ddd;
+}
+
+.rating {
+	display:inline-block;
+	margin:0px;
+}
+
+.rating span {
+	display:inline-block;
+	background: url('../img/rating_star_empty.png') no-repeat;
+	height:16px;
+	width:16px;
+}	
+
+.rating span a { 
+	display:block;
+	height:16px;
+	width:16px;
+}
+
+.rating span.selected { 
+	background: url('../img/rating_star_filled.png') no-repeat;
+}
