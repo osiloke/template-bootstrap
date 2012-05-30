@@ -1,9 +1,9 @@
 {if $update eq "nameservers"}
-	{include file="bulkdomainmanagementnameservers.tpl"}
+	{include file="$template/bulkdomainmanagementnameservers.tpl"}
 {elseif $update eq "autorenew"}
-	{include file="bulkdomainmanagementautorenew.tpl"}
+	{include file="$template/bulkdomainmanagementautorenew.tpl"}
 {elseif $update eq "reglock"}
-	{include file="bulkdomainmanagementreglock.tpl"}
+	{include file="$template/bulkdomainmanagementreglock.tpl"}
 {elseif $update eq "contactinfo"}
-	{include file="bulkdomainmanagementcontactinfo.tpl"}
+	{include file="$template/bulkdomainmanagementcontactinfo.tpl"}
 {/if}
