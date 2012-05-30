@@ -20,11 +20,11 @@
 {/if}
 {/if}
 
-<h3 class="marginbottom">{$LANG.domainbulkmanagementchangesaffect}</h3>
-{foreach from=$domains item=domain name=domains}
-	{$domain}{if !$smarty.foreach.domains.last}, {/if}
-{/foreach}
-<hr>
+<div class="alert">
+	<h3 class="alert-heading">{$LANG.domainbulkmanagementchangesaffect}</h3>
+	{foreach from=$domains item=domain name=domains}{$domain}{if !$smarty.foreach.domains.last}, {/if}{/foreach}
+</div>
+
 <form method="post" action="clientarea.php" class="form-horizontal">
 	<input type="hidden" name="action" value="bulkdomain">
 	<input type="hidden" name="update" value="nameservers">
