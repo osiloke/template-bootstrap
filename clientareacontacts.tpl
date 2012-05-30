@@ -138,7 +138,7 @@
 		</div>
 	</div>
 
-	<fieldset id="subaccountfields" class="{if !subaccount} hide{/if}">
+	<fieldset id="subaccountfields" class="{if !$subaccount} hide{/if}">
 		<hr>
 		<div class="control-group">
 			<label class="control-label" for="password">{$LANG.clientareapassword}</label>
