@@ -37,9 +37,9 @@ select { width:auto; }
 
 .borderradius { border-radius: 6px; }
 
-.valigntop { vertical-align:top; }
-.valigntextbottom { vertical-align:text-bottom; }
-.valignbaseline { vertical-align:baseline; }
+.valigntop { vertical-align:top !important; }
+.valigntextbottom { vertical-align:text-bottom !important;}
+.valignbaseline { vertical-align:baseline !important; }
 
 /* height and font-size match btn-large */
 .input-large {
