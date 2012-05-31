@@ -2,6 +2,13 @@
 	<h1>{$LANG.invoices} <small>{$LANG.invoicesintro}</small></h1>
 </div>
 
+{if !$nobalance}
+<div class="well well-small pull-right textcenter lead">
+	{$LANG.invoicesoutstandingbalance}: {$totalbalance} 
+	{if $masspay}<a href="clientarea.php?action=masspay&all=true" class="btn btn-large btn-success"><i class="icon-ok-circle icon-white"></i> {$LANG.masspayall}</a>{/if}
+</div>
+{/if}
+
 <p>{$numitems} {$LANG.recordsfound}, {$LANG.page} {$pagenumber} {$LANG.pageof} {$totalpages}</p>
 
 <table class="table table-bordered-outside table-striped table-sorted">
