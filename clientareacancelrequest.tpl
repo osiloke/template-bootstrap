@@ -25,7 +25,7 @@
 	{/if}
 	
 <div class="alert alert-info alert-block">
-	{$LANG.clientareacancelproduct}: <strong>{$groupname} - {$productname}</strong>{if $domain} ({$domain}){/if}
+	{$LANG.clientareacancelproduct}: <strong>{if $groupname}{$groupname} - {/if}{$productname}</strong>{if $domain} ({$domain}){/if}
 </div>
 
 <form method="post" action="{$smarty.server.PHP_SELF}">

@@ -58,7 +58,7 @@
 					<ul class="thumbnails">
 						<li class="span8">
 							<h4>{$LANG.orderproduct}:</h4>
-							{$groupname} - {$product} <span class="label label-{$rawstatus}">{$status}</span>{if $domain}<div><a href="http://{$domain}" target="_blank">{$domain}</a></div>{/if}
+							{if $groupname}{$groupname} - {/if}{$product} <span class="label label-{$rawstatus}">{$status}</span>{if $domain}<div><a href="http://{$domain}" target="_blank">{$domain}</a></div>{/if}
 						</li>
 {if $dedicatedip}
 						<li class="span8">
