@@ -33,7 +33,7 @@
 	<p class="textcenter marginbottom"><strong>{$LANG.announcementsnone}</strong></p>
 {/foreach}
 
-<div class="pull-left"><img src="images/rssfeed.gif" alt="{$LANG.announcementsrss}" class="valigntop" /> <a href="announcementsrss.php">{$LANG.announcementsrss}</a></div>
+<div class="pull-left"><img src="images/rssfeed.gif" alt="{$LANG.announcementsrss}" class="valigntop"> <a href="announcementsrss.php">{$LANG.announcementsrss}</a></div>
 
 <div class="pagination pagination-right">
    <ul>

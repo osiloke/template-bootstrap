@@ -120,8 +120,8 @@
 	</div>
 {/if}
 	 <div class="form-actions">
-		<input class="btn btn-primary" type="submit" name="submit" value="{$LANG.clientareasavechanges}" />
-		<input class="btn" type="reset" value="{$LANG.cancel}" />
+		<input class="btn btn-primary" type="submit" name="submit" value="{$LANG.clientareasavechanges}">
+		<input class="btn" type="reset" value="{$LANG.cancel}">
 		{if $allowcustomerdelete && $cardtype}
 		<a href="clientarea.php?action=creditcard&amp;delete=true" class="btn btn-danger">{$LANG.creditcarddelete}</a>
 		{/if}

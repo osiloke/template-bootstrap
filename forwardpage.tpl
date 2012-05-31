@@ -2,7 +2,7 @@
 
 <hr>
 
-<p class="textcenter"><img src="images/loading.gif" alt="Loading" border="0" /></p>
+<p class="textcenter"><img src="images/loading.gif" alt="Loading" border="0"></p>
 
 <hr>
 

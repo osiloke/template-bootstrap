@@ -108,18 +108,18 @@
 				</div>
 				<div class="span8 textcenter">
 					<form method="post" action="{$smarty.server.PHP_SELF}?action=domaindetails#tab-autorenew">
-						<input type="hidden" name="id" value="{$domainid}" />
+						<input type="hidden" name="id" value="{$domainid}">
 					{if $autorenew}
 						<div class="alert alert-success alert-block textcenter">
 							<h3 class="alert-heading">{$LANG.domainautorenewstatus}: {$LANG.domainsautorenewenabled}</h3>
 						</div>
-						<input type="hidden" name="autorenew" value="disable" />
+						<input type="hidden" name="autorenew" value="disable">
 						<input type="submit" class="btn btn-large btn-danger" value="{$LANG.domainsautorenewdisable}">
 					{else}
 						<div class="alert alert-error alert-block textcenter">
 							<h3 class="alert-heading">{$LANG.domainautorenewstatus}: {$LANG.domainsautorenewdisabled}</h3>
 						</div>
-						<input type="hidden" name="autorenew" value="enable" />
+						<input type="hidden" name="autorenew" value="enable">
 						<input type="submit" class="btn btn-large btn-success" value="{$LANG.domainsautorenewenable}">
 					{/if}
 					</form>

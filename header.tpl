@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 	<html lang="en">
 		<head>
-			<meta http-equiv="content-type" content="text/html; charset={$charset}" />
+			<meta http-equiv="content-type" content="text/html; charset={$charset}">
 			<title>{if $kbarticle.title}{$kbarticle.title} - {/if}{$pagetitle} - {$companyname}</title>
-			{if $systemurl}<base href="{$systemurl}" />{/if}
+			{if $systemurl}<base href="{$systemurl}">{/if}
 	
 			<script type="text/javascript" src="templates/{$template}/assets/jquery/js/jquery-1.7.2.min.js"></script>
 	
@@ -24,7 +24,7 @@
 
 			<div id="whmcsheader" class="container">
 				<div>
-					<img src="templates/{$template}/assets/whmcs/img/whmcslogo.png" alt="{$companyname}" />
+					<img src="templates/{$template}/assets/whmcs/img/whmcslogo.png" alt="{$companyname}">
 				</div>
 			</div>
 

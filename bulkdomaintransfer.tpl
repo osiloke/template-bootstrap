@@ -31,7 +31,7 @@
 		{if $capatacha eq "recaptcha"}
 			<p>{$recapatchahtml}</p>
 		{else}
-			<img src="includes/verifyimage.php" alt="captcha" /> <input type="text" name="code" class="span1" style="margin-bottom:0" maxlength="5" />
+			<img src="includes/verifyimage.php" alt="captcha"> <input type="text" name="code" class="span1" style="margin-bottom:0" maxlength="5">
 		{/if}
 		<hr>
 	{/if}

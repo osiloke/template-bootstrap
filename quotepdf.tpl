@@ -73,7 +73,7 @@ foreach ($lineitems AS $item) {
     $tblhtml .= '
     <tr bgcolor="#fff">
         <td align="center">'.$item['qty'].'</td>
-        <td align="left">'.nl2br($item['description']).'<br /></td>
+        <td align="left">'.nl2br($item['description']).'<br></td>
         <td align="center">'.$item['unitprice'].'</td>
         <td align="center">'.$item['discount'].'</td>
         <td align="center">'.$item['total'].'</td>

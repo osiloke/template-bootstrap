@@ -29,7 +29,7 @@
 						<div class="control-group">
 							<label class="control-label" for="createns">{$LANG.domainregisternsns}</label>
 							<div class="controls">
-								<input type="text" name="ns" id="createns" class="span2" /> . {$domain}
+								<input type="text" name="ns" id="createns" class="span2"> . {$domain}
 							</div>
 						</div>
 						<div class="control-group">
@@ -95,7 +95,7 @@
 						<div class="control-group">
 							<label class="control-label" for="deletens">{$LANG.domainregisternsns}</label>
 							<div class="controls">
-								<input type="text" name="ns" id="deletens" class="span2" /> . {$domain}
+								<input type="text" name="ns" id="deletens" class="span2"> . {$domain}
 							</div>
 						</div>
 						<div class="form-actions">

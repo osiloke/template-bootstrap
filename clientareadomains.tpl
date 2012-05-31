@@ -27,7 +27,7 @@
 		<tbody>
 {foreach key=num item=domain from=$domains}
 			<tr>
-				<td class="textcenter"><input type="checkbox" name="domids[]" class="domids" value="{$domain.id}" /></td>
+				<td class="textcenter"><input type="checkbox" name="domids[]" class="domids" value="{$domain.id}"></td>
 				<td><a href="http://{$domain.domain}/" target="_blank">{$domain.domain}</a></td>
 				<td>{$domain.registrationdate}</td>
 				<td>{$domain.nextduedate}</td>

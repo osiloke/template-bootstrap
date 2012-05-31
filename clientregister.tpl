@@ -161,7 +161,7 @@
 	{/if}
 
 		<div class="textcenter">
-			<input class="btn btn-large btn-primary" type="submit" value="{$LANG.clientregistertitle}" />
+			<input class="btn btn-large btn-primary" type="submit" value="{$LANG.clientregistertitle}">
 		</div>
 	</fieldset>
 </form>

@@ -22,11 +22,11 @@
 		<div class="row">
 			<div class="span4">
 				<label for="name">{$LANG.supportticketsclientname}</label>
-				<input class="span4" type="text" name="name" id="name" value="{$name}" />
+				<input class="span4" type="text" name="name" id="name" value="{$name}">
 			</div>
 			<div class="span4">
 				<label for="email">{$LANG.supportticketsclientemail}</label>
-				<input class="span4" type="text" name="email" id="email" value="{$email}" />
+				<input class="span4" type="text" name="email" id="email" value="{$email}">
 			</div>
 		</div>
 		<div class="row">
@@ -49,13 +49,13 @@
 	{if $capatacha eq "recaptcha"}
 				{$recapatchahtml}
 	{else}
-				<img src="includes/verifyimage.php" alt="Captcha"> <input type="text" name="code" size="10" maxlength="5" class="span2" />
+				<img src="includes/verifyimage.php" alt="Captcha"> <input type="text" name="code" size="10" maxlength="5" class="span2">
 	{/if}
 			</div>
 		</div>
 {/if}
 		<div class="textcenter">
-			<input type="submit" value="{$LANG.contactsend}" class="btn btn-primary" />
+			<input type="submit" value="{$LANG.contactsend}" class="btn btn-primary">
 		</div>
 	</fieldset>
 </form>

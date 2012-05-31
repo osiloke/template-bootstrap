@@ -59,11 +59,11 @@
 <div class="well textcenter">
 	<h3>{$LANG.domaincheckerchecknewdomain}</h3>
 	<form method="post" action="domainchecker.php">
-		<input class="span7" style="font-size:1.4em;height:30px;" name="domain" type="text" value="" placeholder="{$LANG.domaincheckerdomainexample}" />
+		<input class="span7" style="font-size:1.4em;height:30px;" name="domain" type="text" value="" placeholder="{$LANG.domaincheckerdomainexample}">
 		<div>
-			{if $registerdomainenabled}<input type="submit" value="{$LANG.checkavailability}" class="btn btn-primary btn-large" />{/if} 
-			{if $transferdomainenabled}<input type="submit" name="transfer" value="{$LANG.domainstransfer}" class="btn btn-success btn-large" />{/if} 
-			{if $owndomainenabled}<input type="submit" name="hosting" value="{$LANG.domaincheckerhostingonly}" class="btn btn-large" />{/if}
+			{if $registerdomainenabled}<input type="submit" value="{$LANG.checkavailability}" class="btn btn-primary btn-large">{/if} 
+			{if $transferdomainenabled}<input type="submit" name="transfer" value="{$LANG.domainstransfer}" class="btn btn-success btn-large">{/if} 
+			{if $owndomainenabled}<input type="submit" name="hosting" value="{$LANG.domaincheckerhostingonly}" class="btn btn-large">{/if}
 		</div>
 	</form>
 </div>
@@ -91,7 +91,7 @@
 		<tr>
 			<td>{$ticket.date}</td>
 			<td>{$ticket.department}</td>
-			<td><img src="images/article.gif" alt="Ticket" />&nbsp;<a href="viewticket.php?tid={$ticket.tid}&amp;c={$ticket.c}">{if $ticket.unread}<strong>{/if}#{$ticket.tid} - {$ticket.subject}{if $ticket.unread}</strong>{/if}</a></td>
+			<td><img src="images/article.gif" alt="Ticket">&nbsp;<a href="viewticket.php?tid={$ticket.tid}&amp;c={$ticket.c}">{if $ticket.unread}<strong>{/if}#{$ticket.tid} - {$ticket.subject}{if $ticket.unread}</strong>{/if}</a></td>
 			<td>{$ticket.status}</td>
 			<td>{$ticket.lastreply}</td>
 			<td class="textcenter">
@@ -113,7 +113,7 @@
 	<table class="table table-striped table-bordered-outside table-sorted">
 		<thead>
 			<tr>
-				{if $masspay}<th class="textcenter"><input type="checkbox" onclick="toggleCheckboxes('invids')" /></th>{/if}
+				{if $masspay}<th class="textcenter"><input type="checkbox" onclick="toggleCheckboxes('invids')"></th>{/if}
 				<th class="sort-desc"><a href="clientarea.php?action=invoices&orderby=id">{$LANG.invoicestitle}</a></th>
 				<th><a href="clientarea.php?action=invoices&orderby=date">{$LANG.invoicesdatecreated}</a></th>
 				<th><a href="clientarea.php?action=invoices&orderby=duedate">{$LANG.invoicesdatedue}</a></th>
@@ -125,13 +125,13 @@
 		<tbody>
 	{foreach from=$invoices item=invoice}
 			<tr>
-				{if $masspay}<td class="textcenter"><input type="checkbox" name="invoiceids[]" value="{$invoice.id}" class="invids" /></td>{/if}
+				{if $masspay}<td class="textcenter"><input type="checkbox" name="invoiceids[]" value="{$invoice.id}" class="invids"></td>{/if}
 				<td><a href="viewinvoice.php?id={$invoice.id}" target="_blank">{$invoice.invoicenum}</a></td>
 				<td>{$invoice.datecreated}</td>
 				<td>{$invoice.datedue}</td>
 				<td>{$invoice.total}</td>
 				<td><span class="label label-{$invoice.rawstatus}">{$invoice.statustext}</span></td>
-				<td class="textcenter"><input type="button" class="btn btn-info" value="{$LANG.invoicesview}" onclick="window.open('viewinvoice.php?id={$invoice.id}')" /></td>
+				<td class="textcenter"><input type="button" class="btn btn-info" value="{$LANG.invoicesview}" onclick="window.open('viewinvoice.php?id={$invoice.id}')"></td>
 			</tr>
 	{foreachelse}
 			<tr>
@@ -142,7 +142,7 @@
 		<tfoot>
 	{if $invoices}
 			<tr>
-				<td colspan="{if $masspay}3{else}2{/if}">{if $masspay}<input type="submit" value="{$LANG.masspayselected}" class="btn" /> <input type="button" value="{$LANG.masspayall}" onclick="window.location='clientarea.php?action=masspay&all=true'" class="btn btn-primary" />{/if}</td>
+				<td colspan="{if $masspay}3{else}2{/if}">{if $masspay}<input type="submit" value="{$LANG.masspayselected}" class="btn"> <input type="button" value="{$LANG.masspayall}" onclick="window.location='clientarea.php?action=masspay&all=true'" class="btn btn-primary">{/if}</td>
 				<td class="textright">{$LANG.invoicestotaldue}</td>
 				<td>{$totalbalance}</td>
 				<td colspan="2">&nbsp;</td>

@@ -94,7 +94,7 @@ $tblhtml = '<table width="100%" bgcolor="#ccc" cellspacing="1" cellpadding="2" b
 foreach ($invoiceitems AS $item) {
     $tblhtml .= '
     <tr bgcolor="#fff">
-        <td align="left">'.nl2br($item['description']).'<br /></td>
+        <td align="left">'.nl2br($item['description']).'<br></td>
         <td align="center">'.$item['amount'].'</td>
     </tr>';
 }

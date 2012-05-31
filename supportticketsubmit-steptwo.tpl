@@ -28,7 +28,7 @@
 			{if $loggedin}
 			<input class="span4 disabled" type="text" id="email" value="{$email}" disabled="disabled">
 			{else}
-			<input class="span4" type="text" name="email" id="email" value="{$email}" />
+			<input class="span4" type="text" name="email" id="email" value="{$email}">
 			{/if}
 		</div>
 	</div>

@@ -40,7 +40,7 @@ function addBookmark() {
 			<option value="yes">{$LANG.knowledgebaseyes}</option>
 			<option value="no">{$LANG.knowledgebaseno}</option>
 		</select>
-		<input type="submit" value="{$LANG.knowledgebasevote}" class="btn btn-primary" />
+		<input type="submit" value="{$LANG.knowledgebasevote}" class="btn btn-primary">
 	{/if}
 </form>
 

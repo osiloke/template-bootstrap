@@ -4,21 +4,21 @@
 	<p class="marginbottom">{$LANG.domaincheckerenterdomain}</p>
 	<div class="textcenter">
 		<form method="post" action="domainchecker.php">
-			<input class="span7 marginbottom" style="font-size:1.4em;height:30px;" name="domain" type="text" value="" placeholder="{$LANG.domaincheckerdomainexample}" />
+			<input class="span7 marginbottom" style="font-size:1.4em;height:30px;" name="domain" type="text" value="" placeholder="{$LANG.domaincheckerdomainexample}">
 	{if $capatacha}
 			<div class="borderradius textcenter marginbottom" style="width:50%;margin-left:auto;margin-right:auto;border:1px dashed #cccccc;padding:10px;">
 				<p>{$LANG.captchaverify}</p>
 		{if $capatacha eq "recaptcha"}
 				<p>{$recapatchahtml}</p>
 		{else}
-				<img src="includes/verifyimage.php" alt="captcha" /> <input type="text" name="code" class="span1" style="margin-bottom:0" maxlength="5" />
+				<img src="includes/verifyimage.php" alt="captcha"> <input type="text" name="code" class="span1" style="margin-bottom:0" maxlength="5">
 		{/if}
 			</div>
 	{/if}
 			<div>
-				{if $registerdomainenabled}<input type="submit" value="{$LANG.checkavailability}" class="btn btn-primary btn-large" />{/if} 
-				{if $transferdomainenabled}<input type="submit" name="transfer" value="{$LANG.domainstransfer}" class="btn btn-success btn-large" />{/if} 
-				{if $owndomainenabled}<input type="submit" name="hosting" value="{$LANG.domaincheckerhostingonly}" class="btn btn-large" />{/if} 
+				{if $registerdomainenabled}<input type="submit" value="{$LANG.checkavailability}" class="btn btn-primary btn-large">{/if} 
+				{if $transferdomainenabled}<input type="submit" name="transfer" value="{$LANG.domainstransfer}" class="btn btn-success btn-large">{/if} 
+				{if $owndomainenabled}<input type="submit" name="hosting" value="{$LANG.domaincheckerhostingonly}" class="btn btn-large">{/if} 
 			</div>
 		</form>
 	</div>
@@ -57,6 +57,6 @@
 {elseif $announcements}
 <h2>{$LANG.latestannouncements}</h2>
 	{foreach from=$announcements item=announcement}
-<p>{$announcement.date} - <a href="{if $seofriendlyurls}announcements/{$announcement.id}/{$announcement.urlfriendlytitle}.html{else}announcements.php?id={$announcement.id}{/if}"><b>{$announcement.title}</b></a><br />{$announcement.text|strip_tags|truncate:100:"..."}</p>
+<p>{$announcement.date} - <a href="{if $seofriendlyurls}announcements/{$announcement.id}/{$announcement.urlfriendlytitle}.html{else}announcements.php?id={$announcement.id}{/if}"><b>{$announcement.title}</b></a><br>{$announcement.text|strip_tags|truncate:100:"..."}</p>
 	{/foreach}
 {/if}

@@ -90,7 +90,7 @@
 	{if $promocode}
 		{$promocode} - {$promodesc} <input type="submit" name="removepromo" value="{$LANG.orderdontusepromo}" class="btn btn-danger">
 	{else}
-		<input type="text" name="promocode" size="20" /> <input type="submit" value="{$LANG.orderpromovalidatebutton}" class="btn btn-success">
+		<input type="text" name="promocode" class="span3"> <input type="submit" value="{$LANG.orderpromovalidatebutton}" class="btn btn-success">
 	{/if}
 </form>
 

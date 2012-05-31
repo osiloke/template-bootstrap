@@ -54,7 +54,7 @@
 				{if $dnsrecord.type eq "MX"}
 					<input type="text" name="dnsrecordpriority[]" value="{$dnsrecord.priority}" class="span1"> <i class="icon icon-question-sign" rel="tooltip" data-original-title="{$LANG.domaindnsmxonly}"></i>
 				{else}
-					<input type="hidden" name="dnsrecordpriority[]" value="N/A" />{$LANG.domainregnotavailable}
+					<input type="hidden" name="dnsrecordpriority[]" value="N/A">{$LANG.domainregnotavailable}
 				{/if}
 				</td>
 			</tr>

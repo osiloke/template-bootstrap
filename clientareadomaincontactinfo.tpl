@@ -42,7 +42,7 @@
 	</div>
 	<div class="textcenter">
 		<a href="clientarea.php?action=domaindetails&id={$domainid}" class="btn" title="{$LANG.clientareabacklink}">{$LANG.clientareabacklink}</a>
-		<input type="submit" value="{$LANG.clientareasavechanges}" class="btn btn-primary" />
+		<input type="submit" value="{$LANG.clientareasavechanges}" class="btn btn-primary">
 	</div>
 </form>
 

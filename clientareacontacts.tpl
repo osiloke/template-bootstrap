@@ -279,31 +279,31 @@
 			<label class="control-label">{$LANG.clientareacontactsemails}</label>
 			<div class="controls">
 				<label class="checkbox">
-					<input type="checkbox" name="generalemails" id="generalemails" value="1"{if $generalemails} checked="checked"{/if} />
+					<input type="checkbox" name="generalemails" id="generalemails" value="1"{if $generalemails} checked="checked"{/if}>
 					<span>{$LANG.clientareacontactsemailsgeneral}</span>
 				</label>
 			</div>
 			<div class="controls">
 				<label class="checkbox">
-					<input type="checkbox" name="productemails" id="productemails" value="1"{if $productemails} checked="checked"{/if} />
+					<input type="checkbox" name="productemails" id="productemails" value="1"{if $productemails} checked="checked"{/if}>
 					<span>{$LANG.clientareacontactsemailsproduct}</span>
 				</label>
 			</div>
 			<div class="controls">
 				<label class="checkbox">
-					<input type="checkbox" name="domainemails" id="domainemails" value="1"{if $domainemails} checked="checked"{/if} />
+					<input type="checkbox" name="domainemails" id="domainemails" value="1"{if $domainemails} checked="checked"{/if}>
 					{$LANG.clientareacontactsemailsdomain}
 				</label>
 			</div>
 			<div class="controls">
 				<label class="checkbox">
-					<input type="checkbox" name="invoiceemails" id="invoiceemails" value="1"{if $invoiceemails} checked="checked"{/if} />
+					<input type="checkbox" name="invoiceemails" id="invoiceemails" value="1"{if $invoiceemails} checked="checked"{/if}>
 					{$LANG.clientareacontactsemailsinvoice}
 				</label>
 			</div>
 			<div class="controls">
 				<label class="checkbox">
-					<input type="checkbox" name="supportemails" id="supportemails" value="1"{if $supportemails} checked="checked"{/if} />
+					<input type="checkbox" name="supportemails" id="supportemails" value="1"{if $supportemails} checked="checked"{/if}>
 					{$LANG.clientareacontactsemailssupport}
 				</label>
 			</div>
