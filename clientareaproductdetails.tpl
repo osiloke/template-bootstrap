@@ -122,7 +122,9 @@
 {/if}
 					</ul>
 {if $moduleclientarea}
+					<hr>
 					<div class="moduleoutput">{$moduleclientarea|replace:'modulebutton':'btn'}</div>
+					<hr>
 {/if}
 				</div>
 			</div>
