@@ -43,8 +43,8 @@ select { width:auto; }
 
 /* height and font-size match btn-large */
 .input-large {
-	height: 27px;
-	font-size:15px;
+	height: 27px !important;
+	font-size:15px !important;
 }
 
 /* table tfoot styling */
