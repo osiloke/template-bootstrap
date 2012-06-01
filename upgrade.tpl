@@ -8,8 +8,13 @@
 
 {if $overdueinvoice}
 
-<p>{$LANG.upgradeerroroverdueinvoice}</p>
-<a href="clientarea.php?action=productdetails&id={$id}" class="btn btn-large">{$LANG.clientareabacklink}</a>
+<div class="alert alert-error">
+	{$LANG.upgradeerroroverdueinvoice}
+</div>
+
+<div class="textcenter marginbottom">
+	<a href="clientarea.php?action=productdetails&id={$id}" class="btn btn-large">{$LANG.clientareabacklink}</a>
+</div>
 
 {else}
 
