@@ -59,9 +59,7 @@
 
 <p>{$LANG.sslserverinfodetails}</p>
 
-<form method="post" action="configuressl.php" class="form-horizontal">
-	<input type="hidden" name="cert" value="{$cert}">
-	<input type="hidden" name="step" value="2">
+<form method="post" action="configuressl.php?cert={$cert}&amp;step=2" class="form-horizontal">
 	<div class="control-group">
 		<label class="control-label" for="servertype">{$LANG.sslservertype}</label>
 		<div class="controls">
