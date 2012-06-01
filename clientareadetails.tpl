@@ -159,3 +159,5 @@
 	});
 </script>
 {/literal}
+
+<script type="text/javascript" src="includes/jscript/statesdropdown.js"></script>

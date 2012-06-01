@@ -314,3 +314,5 @@
 		<input class="btn" type="reset" value="{$LANG.cancel}">
 	</div>
 </form>
+
+<script type="text/javascript" src="includes/jscript/statesdropdown.js"></script>
