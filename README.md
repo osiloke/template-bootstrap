@@ -5,6 +5,16 @@ Clientarea template for use with the WHMCS billing software
 
 
 
+Features
+-----------
+
+A few features that sets this template apart from the default WHMCS template.
+
+* HTML is clean and valid (unlike the default theme)
+* Includes full version of Twitter-Bootstrap (css, javascript and images)
+* Responsive design - this means the template will adjust and look great as well as being usable on devices other than desktop computers (ex: smartphones, tablets, and large displays).
+
+
 Goal
 -----------
 
