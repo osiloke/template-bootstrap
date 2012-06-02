@@ -202,12 +202,11 @@ function autoForward() {
 			</script>
 	    </div>
 	</div>
+	<div class="textcenter marginbottom">
+		<p class="marginbottom"><img src="images/padlock.gif" alt="Secure" class="valigntextbottom"> {$LANG.creditcardsecuritynotice}</p>
+		<input class="btn btn-large btn-primary" type="submit" value="{$LANG.ordercontinuebutton}" onclick="$('#modalpleasewait').modal();">
+	</div>
 </form>
-
-<div class="textcenter marginbottom">
-	<p class="marginbottom"><img src="images/padlock.gif" alt="Secure" class="valigntextbottom"> {$LANG.creditcardsecuritynotice}</p>
-	<input class="btn btn-large btn-primary" type="submit" value="{$LANG.ordercontinuebutton}" onclick="$('#modalpleasewait').modal();">
-</div>
 
 <div class="modal hide fade in" id="modalpleasewait">
 	<div class="modal-header textcenter">
