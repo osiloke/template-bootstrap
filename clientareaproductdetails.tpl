@@ -20,8 +20,7 @@
 {elseif $modulecustombuttonresult}
 <div class="alert alert-error fade in">
 	<button class="close" data-dismiss="alert">&times;</button>
-	<h4 class="alert-heading">{$LANG.moduleactionfailed}</h4>
-	{$modulecustombuttonresult}</p>
+	<strong>{$LANG.moduleactionfailed}:</strong> {$modulecustombuttonresult}
 </div>
 {/if}
 
