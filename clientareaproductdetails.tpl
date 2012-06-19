@@ -204,6 +204,7 @@
 								<th>{$LANG.clientareaaddon}</th>
 								<th>{$LANG.clientareaaddonpricing}</th>
 								<th>{$LANG.clientareahostingnextduedate}</th>
+								<th>{$LANG.clientareastatus}</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -212,10 +213,11 @@
 								<td>{$addon.name}</td>
 								<td>{$addon.pricing}</td>
 								<td>{$addon.nextduedate}</td>
+								<td><span class="label label-{$addon.rawstatus}">{$addon.status}</span></td>
 							</tr>
 {foreachelse}
 							<tr>
-								<td class="textcenter" colspan="3">{$LANG.clientareanoaddons}</td>
+								<td class="textcenter" colspan="4">{$LANG.clientareanoaddons}</td>
 							</tr>
 {/foreach}
 						</tbody>

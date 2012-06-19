@@ -118,6 +118,7 @@
 				<th><a href="clientarea.php?action=invoices&orderby=date">{$LANG.invoicesdatecreated}</a></th>
 				<th><a href="clientarea.php?action=invoices&orderby=duedate">{$LANG.invoicesdatedue}</a></th>
 				<th><a href="clientarea.php?action=invoices&orderby=total">{$LANG.invoicestotal}</a></th>
+				<th><a href="clientarea.php?action=invoices&orderby=balance">{$LANG.invoicesbalance}</a></th>
 				<th><a href="clientarea.php?action=invoices&orderby=status">{$LANG.invoicesstatus}</a></th>
 				<th>&nbsp;</th>
 			</tr>
@@ -131,18 +132,19 @@
 				<td>{$invoice.datedue}</td>
 				<td>{$invoice.total}</td>
 				<td><span class="label label-{$invoice.rawstatus}">{$invoice.statustext}</span></td>
+				<td>{$invoice.balance}</td>
 				<td class="textcenter"><input type="button" class="btn btn-info" value="{$LANG.invoicesview}" onclick="window.open('viewinvoice.php?id={$invoice.id}')"></td>
 			</tr>
 	{foreachelse}
 			<tr>
-				<td colspan="{if $masspay}7{else}6{/if}" class="textcenter">{$LANG.invoicesnoneunpaid}</td>
+				<td colspan="{if $masspay}8{else}7{/if}" class="textcenter">{$LANG.invoicesnoneunpaid}</td>
 			</tr>
 	{/foreach}
 		</tbody>
 		<tfoot>
 	{if $invoices}
 			<tr>
-				<td colspan="{if $masspay}3{else}2{/if}">{if $masspay}<input type="submit" value="{$LANG.masspayselected}" class="btn"> <input type="button" value="{$LANG.masspayall}" onclick="window.location='clientarea.php?action=masspay&all=true'" class="btn btn-primary">{/if}</td>
+				<td colspan="{if $masspay}4{else}3{/if}">{if $masspay}<input type="submit" value="{$LANG.masspayselected}" class="btn"> <input type="button" value="{$LANG.masspayall}" onclick="window.location='clientarea.php?action=masspay&all=true'" class="btn btn-primary">{/if}</td>
 				<td class="textright">{$LANG.invoicestotaldue}</td>
 				<td>{$totalbalance}</td>
 				<td colspan="2">&nbsp;</td>
