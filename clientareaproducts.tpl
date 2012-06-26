@@ -8,7 +8,7 @@
 	<button type="submit" class="btn btn-success">{$LANG.searchfilter}</button>
 </form>
 
-<div id="resultsfound" style="padding-top:9px;">{$numitems} {$LANG.recordsfound}, {$LANG.page} {$pagenumber} {$LANG.pageof} {$totalpages}</div>
+<div id="resultsfound" style="padding-top:15px;">{$numitems} {$LANG.recordsfound}, {$LANG.page} {$pagenumber} {$LANG.pageof} {$totalpages}</div>
 
 <table id="resultslist" class="table table-bordered-outside table-striped table-sorted">
 	<thead>
