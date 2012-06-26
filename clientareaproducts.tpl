@@ -8,9 +8,9 @@
 	<button type="submit" class="btn btn-success">{$LANG.searchfilter}</button>
 </form>
 
-<div style="padding-top:9px;">{$numitems} {$LANG.recordsfound}, {$LANG.page} {$pagenumber} {$LANG.pageof} {$totalpages}</div>
+<div id="resultsfound" style="padding-top:9px;">{$numitems} {$LANG.recordsfound}, {$LANG.page} {$pagenumber} {$LANG.pageof} {$totalpages}</div>
 
-<table class="table table-bordered-outside table-striped table-sorted">
+<table id="resultslist" class="table table-bordered-outside table-striped table-sorted">
 	<thead>
 		<tr>
 			<th{if $orderby eq "product"} class="sort-{$sort}"{/if}><a href="clientarea.php?action=products{if $q}&q={$q}{/if}&orderby=product">{$LANG.orderproduct}</a></th>
@@ -41,7 +41,7 @@
 	</tbody>
 </table>
 
-<form method="post" action="{$smarty.server.PHP_SELF}?action={$clientareaaction}" class="pull-right">
+<form id="resultslimit" method="post" action="{$smarty.server.PHP_SELF}?action={$clientareaaction}" class="pull-right">
 	<fieldset>
 		<select name="itemlimit" onchange="submit()">
 			<option>{$LANG.resultsperpage}</option>
