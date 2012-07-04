@@ -93,11 +93,6 @@ select { width:auto; }
 
 .icon32-twitter { background-image: url("../img/twitter32.png"); }
 
-.badge-white {
-	color: #000000;
-	background-color: #ffffff;
-}
-
 .ticketreply {
 	border-color: #ddd;
 	border-width: 0 1px; 
