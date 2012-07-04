@@ -16,11 +16,7 @@ select { width:auto; }
 
 #whmcsnavbar .navbar { margin-left:-30px; margin-right:-30px; margin-bottom:0px; }
 
-#whmcsbody { background-color:#ffffff; padding:15px; }
-
-#whmcsbody > .page-header { margin-top:0px; }
-
-.page-header { padding-bottom: 8px; }
+#whmcsbody { background-color:#ffffff; padding: 0px 15px; }
 
 #whmcsfooter { background-color: #ffffff; padding: 15px; font-size: 11px; font-family: Tahoma; color: #666 }
 
