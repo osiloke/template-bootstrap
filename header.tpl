@@ -62,7 +62,7 @@
 									<ul class="dropdown-menu">
 										<li><a href="clientarea.php?action=invoices" title="{$LANG.invoices}">{$LANG.invoices}</a></li>
 										<li><a href="clientarea.php?action=quotes" title="{$LANG.quotestitle}">{$LANG.quotestitle}</a></li>
-										<li class="divider"></li>
+										{if $condlinks.addfunds || $condlinks.masspay || $condlinks.updatecc}<li class="divider"></li>{/if}
 										{if $condlinks.addfunds}<li><a href="clientarea.php?action=addfunds" title="{$LANG.addfunds}">{$LANG.addfunds}</a></li>{/if}
 										{if $condlinks.masspay}<li><a href="clientarea.php?action=masspay&amp;all=true" title="{$LANG.masspaytitle}">{$LANG.masspaytitle}</a></li>{/if}
 										{if $condlinks.updatecc}<li><a href="clientarea.php?action=creditcard" title="{$LANG.navmanagecc}">{$LANG.navmanagecc}</a></li>{/if}
