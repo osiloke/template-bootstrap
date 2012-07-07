@@ -30,6 +30,8 @@ select { width:auto; }
 
 .marginbottom { margin-bottom: 18px; }
 .nomarginbottom { margin-bottom: 0px !important; }
+.marginright { margin-right: 18px; }
+.margintop { margin-top: 18px; }
 
 .borderradius { border-radius: 6px; }
 

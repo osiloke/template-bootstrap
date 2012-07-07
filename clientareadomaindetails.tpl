@@ -35,9 +35,10 @@
 	<ul class="nav nav-tabs" id="domaintabs">
 		<li class="active"><a href="#tab-information" data-toggle="tab" title="{$LANG.information}">{$LANG.information}</a></li>
 		<li><a href="#tab-autorenew" data-toggle="tab" title="{$LANG.domainsautorenew}">{$LANG.domainsautorenew}</a></li>
-		{if $managens}<li><a href="#tab-nameservers" data-toggle="tab" title="{$LANG.domainnameservers}">{$LANG.domainnameservers}</a></li>{/if}
+		{if $rawstatus == "active"}<li><a href="#tab-nameservers" data-toggle="tab" title="{$LANG.domainnameservers}">{$LANG.domainnameservers}</a></li>{/if}
 		{if $lockstatus}{if $tld neq "co.uk" && $tld neq "org.uk" && $tld neq "ltd.uk" && $tld neq "plc.uk" && $tld neq "me.uk"}<li><a href="#tab-registrarlock" data-toggle="tab" title="{$LANG.domainregistrarlock}">{$LANG.domainregistrarlock}</a></li>{/if}{/if}
 		{if $releasedomain}<li><a href="#tab-domainrelease" data-toggle="tab" title="{$LANG.domainrelease}">{$LANG.domainrelease}</a></li>{/if}
+		{if $addonscount}<li><a href="#tab-domainaddons" data-toggle="tab" title="{$LANG.clientareahostingaddons}">{$LANG.clientareahostingaddons}</a></li>{/if}
 		{if $managecontacts || $registerns || $dnsmanagement || $emailforwarding || $getepp}
 		<li class="dropdown">
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown" title="{$LANG.domainmanagementtools}">{$LANG.domainmanagementtools}<b class="caret"></b></a>
@@ -167,6 +168,58 @@
 						</fieldset>
 						<input type="submit" class="btn btn-large btn-primary" value="{$LANG.changenameservers}">
 					</form>
+				</div>
+			</div>
+		</div>
+		<div class="tab-pane" id="tab-domainaddons">
+			<div class="row">
+				<div class="span4">
+					<h2>{$LANG.domainaddons}</h2>
+					<p>{$LANG.domainaddonsinfo}</p>
+				</div>
+				<div class="span8">
+				{if $addons.idprotection}
+					<div class="marginbottom">
+						<img src="images/idprotect.png" title="{$LANG.domainidprotection}" class="pull-left marginright">
+						<h4>{$LANG.domainidprotection}</h4>
+						<p class="nomarginbottom">{$LANG.domainaddonsidprotectioninfo}</p>
+						<div class="clearfix">
+						{if $addonstatus.idprotection}
+							<a href="clientarea.php?action=domainaddons&id={$domainid}&disable=idprotect&token={$token}" title="Disable">Disable</a>
+						{else}
+							<a href="clientarea.php?action=domainaddons&id={$domainid}&buy=idprotect&token={$token}" title="{$LANG.domainaddonsbuynow}">{$LANG.domainaddonsbuynow} {$addonspricing.idprotection}</a>
+						{/if}
+						</div>
+					</div>
+				{/if}
+				{if $addons.dnsmanagement}
+					<div class="marginbottom">
+						<img src="images/dnsmanagement.png" title="{$LANG.domainaddonsdnsmanagement}" class="pull-left marginright">
+						<h4>{$LANG.domainaddonsdnsmanagement}</h4>
+						<p class="nomarginbottom">{$LANG.domainaddonsdnsmanagementinfo}</p>
+						<div class="clearfix">
+						{if $addonstatus.dnsmanagement}
+							<a href="clientarea.php?action=domaindns&domainid={$domainid}" title="Manage">Manage</a> | <a href="clientarea.php?action=domainaddons&id={$domainid}&disable=dnsmanagement&token={$token}" title="Disable">Disable</a>
+						{else}
+							<a href="clientarea.php?action=domainaddons&id={$domainid}&buy=dnsmanagement&token={$token}" title="{$LANG.domainaddonsbuynow}">{$LANG.domainaddonsbuynow} {$addonspricing.dnsmanagement}</a>
+						{/if}
+						</div>
+					</div>
+				{/if}
+				{if $addons.emailforwarding}
+					<div class="marginbottom">
+						<img src="images/emailfwd.png" title="{$LANG.domainemailforwarding}" class="pull-left marginright">
+						<h4>{$LANG.domainemailforwarding}</h4>
+						<p class="nomarginbottom">{$LANG.domainaddonsemailforwardinginfo}</p>
+						<div class="clearfix">
+						{if $addonstatus.emailforwarding}
+							<a href="clientarea.php?action=domainemailforwarding&domainid={$domainid}">Manage</a> | <a href="clientarea.php?action=domainaddons&id={$domainid}&disable=emailfwd&token={$token}">Disable</a>
+						{else}
+							<a href="clientarea.php?action=domainaddons&id={$domainid}&buy=emailfwd&token={$token}">{$LANG.domainaddonsbuynow} {$addonspricing.emailforwarding}</a>
+						{/if}
+						</div>
+					</div>
+				{/if}
 				</div>
 			</div>
 		</div>
