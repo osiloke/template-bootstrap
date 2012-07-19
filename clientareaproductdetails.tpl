@@ -106,12 +106,10 @@
 						</li>
 {/foreach}
 {foreach from=$productcustomfields item=customfield}
-	{if $customfield.value}
 						<li class="span4">
 							<h4>{$customfield.name}:</h4>
 							{$customfield.value}
 						</li>
-	{/if}
 {/foreach}
 {if $suspendreason}
 						<li class="span8">
