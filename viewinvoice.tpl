@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta http-equiv="content-type" content="text/html; charset={$charset}">
-    <title>{$companyname} - {* This code should be uncommented for EU companies using the sequential invoice numbering so that when unpaid it is shown as a proforma invoice {if $status eq "Paid"}*}{$LANG.invoicenumber}{*{else}{$LANG.proformainvoicenumber}{/if}*}{$invoicenum}</title>
+	 <meta http-equiv="content-type" content="text/html; charset={$charset}">
+	 <title>{$companyname} - {* This code should be uncommented for EU companies using the sequential invoice numbering so that when unpaid it is shown as a proforma invoice {if $status eq "Paid"}*}{$LANG.invoicenumber}{*{else}{$LANG.proformainvoicenumber}{/if}*}{$invoicenum}</title>
 
-    <link href="templates/{$template}/assets/whmcs/css/invoice.css" rel="stylesheet">
+	 <link href="templates/{$template}/assets/whmcs/css/invoice.css" rel="stylesheet">
 
   </head>
 
@@ -103,40 +103,40 @@
 </div>
 
 <table class="items">
-    <tr class="title textcenter">
-        <td width="70%">{$LANG.invoicesdescription}</td>
-        <td width="30%">{$LANG.invoicesamount}</td>
-    </tr>
+	 <tr class="title textcenter">
+		  <td width="70%">{$LANG.invoicesdescription}</td>
+		  <td width="30%">{$LANG.invoicesamount}</td>
+	 </tr>
 {foreach from=$invoiceitems item=item}
-    <tr>
-        <td>{$item.description}{if $item.taxed eq "true"} *{/if}</td>
-        <td class="textcenter">{$item.amount}</td>
-    </tr>
+	 <tr>
+		  <td>{$item.description}{if $item.taxed eq "true"} *{/if}</td>
+		  <td class="textcenter">{$item.amount}</td>
+	 </tr>
 {/foreach}
-    <tr class="title">
-        <td class="textright">{$LANG.invoicessubtotal}:</td>
-        <td class="textcenter">{$subtotal}</td>
-    </tr>
-    {if $taxrate}
-    <tr class="title">
-        <td class="textright">{$taxrate}% {$taxname}:</td>
-        <td class="textcenter">{$tax}</td>
-    </tr>
-    {/if}
-    {if $taxrate2}
-    <tr class="title">
-        <td class="textright">{$taxrate2}% {$taxname2}:</td>
-        <td class="textcenter">{$tax2}</td>
-    </tr>
-    {/if}
-    <tr class="title">
-        <td class="textright">{$LANG.invoicescredit}:</td>
-        <td class="textcenter">{$credit}</td>
-    </tr>
-    <tr class="title">
-        <td class="textright">{$LANG.invoicestotal}:</td>
-        <td class="textcenter">{$total}</td>
-    </tr>
+	 <tr class="title">
+		  <td class="textright">{$LANG.invoicessubtotal}:</td>
+		  <td class="textcenter">{$subtotal}</td>
+	 </tr>
+	 {if $taxrate}
+	 <tr class="title">
+		  <td class="textright">{$taxrate}% {$taxname}:</td>
+		  <td class="textcenter">{$tax}</td>
+	 </tr>
+	 {/if}
+	 {if $taxrate2}
+	 <tr class="title">
+		  <td class="textright">{$taxrate2}% {$taxname2}:</td>
+		  <td class="textcenter">{$tax2}</td>
+	 </tr>
+	 {/if}
+	 <tr class="title">
+		  <td class="textright">{$LANG.invoicescredit}:</td>
+		  <td class="textcenter">{$credit}</td>
+	 </tr>
+	 <tr class="title">
+		  <td class="textright">{$LANG.invoicestotal}:</td>
+		  <td class="textcenter">{$total}</td>
+	 </tr>
 </table>
 
 {if $taxrate}<p>* {$LANG.invoicestaxindicator}</p>{/if}
@@ -146,28 +146,28 @@
 </div>
 
 <table class="items">
-    <tr class="title textcenter">
-        <td width="30%">{$LANG.invoicestransdate}</td>
-        <td width="25%">{$LANG.invoicestransgateway}</td>
-        <td width="25%">{$LANG.invoicestransid}</td>
-        <td width="20%">{$LANG.invoicestransamount}</td>
-    </tr>
+	 <tr class="title textcenter">
+		  <td width="30%">{$LANG.invoicestransdate}</td>
+		  <td width="25%">{$LANG.invoicestransgateway}</td>
+		  <td width="25%">{$LANG.invoicestransid}</td>
+		  <td width="20%">{$LANG.invoicestransamount}</td>
+	 </tr>
 {foreach from=$transactions item=transaction}
-    <tr>
-        <td class="textcenter">{$transaction.date}</td>
-        <td class="textcenter">{$transaction.gateway}</td>
-        <td class="textcenter">{$transaction.transid}</td>
-        <td class="textcenter">{$transaction.amount}</td>
-    </tr>
+	 <tr>
+		  <td class="textcenter">{$transaction.date}</td>
+		  <td class="textcenter">{$transaction.gateway}</td>
+		  <td class="textcenter">{$transaction.transid}</td>
+		  <td class="textcenter">{$transaction.amount}</td>
+	 </tr>
 {foreachelse}
-    <tr>
-        <td class="textcenter" colspan="4">{$LANG.invoicestransnonefound}</td>
-    </tr>
+	 <tr>
+		  <td class="textcenter" colspan="4">{$LANG.invoicestransnonefound}</td>
+	 </tr>
 {/foreach}
-    <tr class="title">
-        <td class="textright" colspan="3">{$LANG.invoicesbalance}:</td>
-        <td class="textcenter">{$balance}</td>
-    </tr>
+	 <tr class="title">
+		  <td class="textright" colspan="3">{$LANG.invoicesbalance}:</td>
+		  <td class="textcenter">{$balance}</td>
+	 </tr>
 </table>
 
 {if $notes}
